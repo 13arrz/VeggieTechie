@@ -1,0 +1,155 @@
+#loginButton {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+header h2 {
+  color: #cec8ff;
+}
+
+footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+}
+
+.jumbotron {
+  padding: 30px;
+  background-image: linear-gradient(
+    to right,
+    white,
+    aliceblue,
+    lightblue,
+    cornflowerblue
+  );
+  color: white;
+  margin: 0;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.navbar {
+  background-color: #901cad;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+
+.carousel-caption {
+  border: solid #5637d5;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: #901cad;
+  color: white;
+}
+
+/* Parallax Image effect */
+.parallax1 {
+  /* The image used */
+  background-image: url("/img/brooke-lark-AgD6OBNXF0Q-unsplash.jpg");
+  background-position: bottom right;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("/img/ella-olsson-2IxTgsgFi-s-unsplash.jpg");
+  background-position: center;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("/img/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg");
+  background-position: center;
+}
+.parallax1,
+.parallax2,
+.parallax3 {
+  /* Set a specific height */
+  height: 70%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+/* Navigation Bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: green;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* End Navigation Bar */
