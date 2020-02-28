@@ -30,10 +30,10 @@
         <a href="#">Contact Us</a>
       </div>
       <!-- Scrolling Navigation Burger -->
-      <span style="position: relative; z-index:1; font-size:30px;cursor:pointer; margin-left: 30px; position:fixed;"
+      <span style="margin:50px; z-index:1; font-size:30px;cursor:pointer; margin-left: 30px; position:fixed;"
         onclick="openNav()"
       >
-        <img style="width:50px; z-index: 3;" src="/img/Hamburger_Menu-512.png" />
+        <img style="width:50px; " src="/img/Hamburger_Menu-512.png" />
         <div style="color:black;" class="d-none d-sm-block">Menu</div>
       </span>
 
@@ -122,7 +122,7 @@
     </header>
 
 
-<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+<nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30"/></a>
       
@@ -392,6 +392,16 @@
         $('[data-toggle="tooltip"]').tooltip()
     })
 </script> -->
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 
 </body>
 </html>
