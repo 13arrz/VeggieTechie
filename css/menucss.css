@@ -1,3 +1,8 @@
+* {
+  font-family: arial, helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
 #loginButton {
   cursor: pointer;
 }
@@ -12,6 +17,24 @@ h3 {
   font-family: "Lobster", cursive;
 }
 
+footer {
+  display: flex;
+}
+
+footer h1 a {
+  font-family: "Lobster", cursive;
+  color: black;
+}
+footer li a {
+  font-family: fantasy, sans-serif;
+  color: black;
+}
+
+footer a:hover,
+footer li {
+  color: green;
+}
+
 h2 {
   color: #3046c5;
 }
@@ -20,20 +43,55 @@ header h2 {
   color: #cec8ff;
 }
 
+.nav-item {
+  padding: 1px;
+  float: left;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
+.dropdown-item {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-item {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background: linear-gradient(to right, white, beige, #654321);
   padding: 20px 0;
 }
 
 .jumbotron {
-  padding: 30px;
-  background-image: linear-gradient(
+  padding: 0px;
+  /* background-image: linear-gradient(
     to right,
     white,
     aliceblue,
     lightblue,
     cornflowerblue
-  );
+  ); */
   color: white;
   margin: 0;
 }
@@ -45,7 +103,7 @@ footer {
 }
 
 .navbar {
-  background-color: #901cad;
+  background-color: white;
 }
 
 .tab-content {
@@ -79,21 +137,18 @@ footer {
 }
 
 /* Parallax Image effect */
-.parallax1 {
-  /* The image used */
-  background-image: url("/img/brooke-lark-AgD6OBNXF0Q-unsplash.jpg");
-  background-position: bottom right;
-}
 .parallax2 {
   /* The image used */
-  background-image: url("/img/ella-olsson-2IxTgsgFi-s-unsplash.jpg");
+  background-image: url("/img/victoria-shes-wSh0Exrb62g-unsplash.jpg");
   background-position: center;
+  opacity: 0.8;
 }
 
 .parallax3 {
   /* The image used */
-  background-image: url("/img/hermes-rivera-Ww8eQWjMJWk-unsplash.jpg");
+  background-image: url("/img/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg");
   background-position: center;
+  opacity: 0.6;
 }
 .parallax1,
 .parallax2,
@@ -105,7 +160,6 @@ footer {
 
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9;
 }
 
 /* Navigation Bar */
@@ -117,7 +171,7 @@ footer {
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #d9b382;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -153,3 +207,47 @@ footer {
   }
 }
 /* End Navigation Bar */
+
+/* Viewport Height */
+.vh {
+  widows: 100%;
+  height: 100vh;
+}
+
+/* Menu Items Setting */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+  background-color: beige;
+}
+
+.price {
+  color: black;
+  font-size: 20px;
+}
+
+.card h1 {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(104, 88, 2);
+  text-align: center;
+  cursor: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
