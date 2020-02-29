@@ -1,6 +1,7 @@
 /* Body */
 * {
   font-family: arial, helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body,

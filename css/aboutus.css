@@ -1,0 +1,261 @@
+* {
+  font-family: arial, helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+container {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Lobster", cursive;
+  color: black;
+}
+
+footer {
+  display: flex;
+}
+
+footer h1 a {
+  font-family: "Lobster", cursive;
+  color: black;
+}
+footer li a {
+  font-family: fantasy, sans-serif;
+  color: black;
+}
+
+footer a:hover,
+footer li {
+  color: green;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+header h2 {
+  color: #cec8ff;
+}
+
+.nav-item {
+  padding: 1px;
+  float: left;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
+.dropdown-item {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-item {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+footer {
+  background: linear-gradient(to right, white, beige, #654321);
+  padding: 20px 0;
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+
+.carousel-caption {
+  border: solid #5637d5;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: #901cad;
+  color: white;
+}
+
+/* Parallax Image effect */
+.parallax2 {
+  /* The image used */
+  background-image: url("/img/victoria-shes-wSh0Exrb62g-unsplash.jpg");
+  background-position: center;
+  opacity: 0.8;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("/img/ella-olsson-sosOqjx31Go-unsplash.jpg");
+  background-position: center;
+  opacity: 0.6;
+}
+.parallax1,
+.parallax2,
+.parallax3 {
+  /* Set a specific height */
+  height: 70%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Navigation Bar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #d9b382;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: green;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* End Navigation Bar */
+
+/* Viewport Height */
+.vh {
+  widows: 100%;
+  height: 100vh;
+}
+
+.vh2 {
+  widows: 100%;
+  height: 110vh;
+}
+
+/* Menu Items Setting */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+  background-color: beige;
+}
+
+.price {
+  color: black;
+  font-size: 20px;
+}
+
+.card h1 {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(104, 88, 2);
+  text-align: center;
+  cursor: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.ParallaxVideo video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.vidoverlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
